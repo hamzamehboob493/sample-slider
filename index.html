@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Content Slider</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script
+      src="https://kit.fontawesome.com/76547594d2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide">
+          <img class="avatar" src="https://placehold.co/400" />
+          <div class="message">Hi my name is Hamza! Nice to meet you.</div>
+        </div>
+      </div>
+      <div class="navigation-arrows">
+        <i class="fa fa-solid fa-chevron-left arrow arrow-prev"></i>
+        <i class="fa fa-solid fa-chevron-right arrow arrow-next"></i>
+      </div>
+      <div class="navigation-dots"></div>
+    </div>
+
+    <div class="form-container">
+      <form id="content-form">
+        <textarea
+          id="message-input"
+          placeholder="Enter your message"
+          required
+        ></textarea>
+        <input
+          id="avatar-input"
+          type="text"
+          placeholder="Enter avatar image URL"
+          required
+        />
+        <button type="submit">Add Slide</button>
+      </form>
+    </div>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
